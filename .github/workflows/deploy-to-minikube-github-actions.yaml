@@ -31,10 +31,6 @@ jobs:
       run: |
         kubectl get pods
         kubectl describe pods
-    - name: Check service status
-      run : |
-        kubectl get svc
-        kubectl describe svc nodejs-app
     - name: Test service URLs
       run: |
           minikube service list
